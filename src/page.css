@@ -1,0 +1,19 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Basic style for nav links */
+/* Basic style for nav links */
+.nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Style for active link */
+  .nav-link.active {
+    color: #20CD8D;
+
+    font-weight: bold;
+  }
+  

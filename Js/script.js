@@ -7,10 +7,25 @@ const menuIcon = document.getElementById('menu-icon');
 const closeIcon = document.getElementById('close-icon');
 
 menuBtn.addEventListener('click', () => {
-  mobileMenu.classList.toggle('hidden'); // Toggle the mobile menu
-  menuIcon.classList.toggle('hidden');   // Toggle menu icon visibility
-  closeIcon.classList.toggle('hidden');  // Toggle close icon visibility
+  mobileMenu.classList.toggle('hidden'); 
+  menuIcon.classList.toggle('hidden');   
+  closeIcon.classList.toggle('hidden');  
 });
+
+
+
+  // activ case navigation
+
+
+
+
+
+
+
+
+
+
+
 
 
 // =================================================navigation end here ==================================================================================

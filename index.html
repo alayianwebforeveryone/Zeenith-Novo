@@ -6,53 +6,343 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- css import -->
+    <link rel="stylesheet" href="/src/page.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- js import -->
+    <script defer src="https://unpkg.com/page/page.js"></script>
+    <script defer src="/Js/page.js"></script>
+    <script defer src="Js/script.js"></script>
 
 </head>
 
 <body class="bg-background">
-    <!-- ==============================================================================================================================================
-                                                         Navigation
-    ============================================================================================================================================== -->
 
-    <div class="flex  text-white top-0 py-3 flex-wrap justify-between px-4 items-center lg:px-20   xl:px-48 mt-4">
-        <h1 class="text-lg  font-semibold">Zeenith Nova</h1>
-        <!-- menu-icon for small screen----->
-        <div id="menu-btn" class="text-white md:hidden block focus:outline-none">
-            <img class="w-10 h-12 " id="menu-icon" src="/Image/menuIcon.svg" alt="menu">
-            <img class="w-10 h-12 hidden" id="close-icon" src="/Image/close.svg" alt="close">
-        </div>
+    <header class="bg-[url('Image/bgbanner.jpg')] bg-no-repeat bg-cover bg-center h-screen pt-4  w">
+        <!-- ==============================================================================================================================================
+                                                          Navigation
+     ============================================================================================================================================== -->
+        <div
+            class="flex  fixed w-full  text-white top-0 py-5 flex-wrap justify-between px-4 items-center lg:px-20 bg-[#292623] bg-opacity-90 b-40  ">
+            <h1 class="text-lg  font-semibold">Zeenith Nova</h1>
+            <!-- menu-icon for small screen----->
+            <div id="menu-btn" class="text-white md:hidden block focus:outline-none">
+                <img class="w-10 h-12 " id="menu-icon" src="/Image/menuIcon.svg" alt="menu">
+                <img class="w-10 h-12 hidden" id="close-icon" src="/Image/close.svg" alt="close">
+            </div>
 
             <!-- navigation for large screen -->
-        <div id="menu" class="hidden sm:flex xl:space-x-20  lg:space-x-12 md:space-x-8  text-md">
-            <a href="#" class="text-white hover:text-gray-300">Home</a>
-            <a href="#" class="text-white hover:text-gray-300">Services</a>
-            <a href="#" class="text-white hover:text-gray-300">Our work</a>
-            <a href="#" class="text-white hover:text-gray-300">Reviews</a>
-            <a href="#" class="text-white hover:text-gray-300">About</a>
-            <a href="#" class="text-white hover:text-gray-300">Contact</a>
+            <div id="menu" class="hidden sm:flex xl:space-x-20  lg:space-x-12 md:space-x-8   text-lg">
+                <a href="#home" id="home-link" class="nav-link  ">Home</a>
+                <a href="#services" id="services-link" class="nav-link ">Services</a>
+                <a href="#work" id="work-link" class="nav-link hover:">Our work</a>
+                <a href="#reviews" id="reviews-link" class="nav-link hover:">Reviews</a>
+                <a href="#about" id="about-link" class="nav-link hover:">About</a>
+                <a href="#contact" id="contact-link" class="nav-link  hoveray-300">Contact</a>
+            </div>
         </div>
+
+
+        <!-- small screen -->
+        <div id="mobile-menu" class="md:hidden hidden pl-12 ">
+            <a href="#home" class="block text-white px-4 py-2">Home</a>
+            <a href="#services" class="block text-white px-4 py-2">Services</a>
+            <a href="#work" class="block text-white px-4 py-2">Our work</a>
+            <a href="#reviews" class="block text-white px-4 py-2">Reviews</a>
+            <a href="#about" class="block text-white px-4 py-2">About</a>
+            <a href="#contact" class="block text-white px-4 py-2">Contact</a>
+        </div>
+
+
+
+
+
+        <div class="py-72 h-full " id="home">
+            <div
+                class="block  pb-12  text-center mx-auto bg-[#292623] bg-opacity-60 w-[90%] md:w-[70%] py-4 rounded-lg">
+                <p
+                    class="mt-12 text-textColor leading-10  md:text-[40px]  text-xl  font-extrabold md:w-[75%]  w-[90%]  block mx-auto">
+                    Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Quos porro quasir.
+                </p>
+                <button
+                    class="bg-headingColor  px-4   md:px-6 py-3 rounded-full mt-8 hover:bg-green-300  md:text-lg font-bold text-gray-700 ">Get
+                    Started</button>
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+    <!-- ========================================================services=============================================================================== -->
+
+
+
+    <div class="mt-72  bg-green-300 text-center p-24 " id="services">
+        <h1 class="text-center text-5xl font-bold">Services</h1>
+        <p class="mt-24 text-justify text-lg leading-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quo, alias commodi, unde provident eum
+            tempora
+            blanditiis eos officia asperiores quisquam eaque vel eius nobis, porro inventore autem vero delectus iste
+            vitae
+            necessitatibus tenetur dolorem? Eligendi, et tempora quaerat quas vero recusandae minus a consequuntur
+            delectus
+            molestiae accusamus illo distinctio ratione eaque, similique atque aliquid quos culpa fuga doloremque!
+            Soluta
+            quo perspiciatis dolores et saepe incidunt quam odio excepturi voluptates dolore. Quas modi officiis
+            nostrum,
+            optio, perferendis blanditiis at cumque eos hic sapiente ea tempora sed, unde assumenda. Perferendis
+            molestiae
+            sint blanditiis exercitationem necessitatibus. Non sint accusamus placeat facilis iure?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quo, alias commodi, unde provident eum
+            tempora
+            blanditiis eos officia asperiores quisquam eaque vel eius nobis, porro inventore autem vero delectus iste
+            vitae
+            necessitatibus tenetur dolorem? Eligendi, et tempora quaerat quas vero recusandae minus a consequuntur
+            delectus
+            molestiae accusamus illo distinctio ratione eaque, similique atque aliquid quos culpa fuga doloremque!
+            Soluta
+            quo perspiciatis dolores et saepe incidunt quam odio excepturi voluptates dolore. Quas modi officiis
+            nostrum,
+            optio, perferendis blanditiis at cumque eos hic sapiente ea tempora sed, unde assumenda. Perferendis
+            molestiae
+            sint blanditiis exercitationem necessitatibus. Non sint accusamus placeat facilis iure?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quo, alias commodi, unde provident eum
+            tempora
+            blanditiis eos officia asperiores quisquam eaque vel eius nobis, porro inventore autem vero delectus iste
+            vitae
+            necessitatibus tenetur dolorem? Eligendi, et tempora quaerat quas vero recusandae minus a consequuntur
+            delectus
+            molestiae accusamus illo distinctio ratione eaque, similique atque aliquid quos culpa fuga doloremque!
+            Soluta
+            quo perspiciatis dolores et saepe incidunt quam odio excepturi voluptates dolore. Quas modi officiis
+            nostrum,
+            optio, perferendis blanditiis at cumque eos hic sapiente ea tempora sed, unde assumenda. Perferendis
+            molestiae
+            sint blanditiis exercitationem necessitatibus. Non sint accusamus placeat facilis iure?
+
+        </p>
     </div>
 
 
-    <!-- small screen -->
-    <div id="mobile-menu" class="md:hidden hidden pl-12 ">
-        <a href="#" class="block text-white px-4 py-2">Home</a>
-        <a href="#" class="block text-white px-4 py-2">About</a>
-        <a href="#" class="block text-white px-4 py-2">Services</a>
-        <a href="#" class="block text-white px-4 py-2">Contact</a>
+
+    <!-- =============================================================work================================================================================= -->
+
+
+
+    <div class="mt-72  bg-green-300 text-center p-24 " id="work">
+        <h1 class="text-center text-5xl font-bold">Our Work</h1>
+        <p class="mt-24 text-justify text-lg leading-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quo, alias commodi, unde provident eum
+            tempora
+            blanditiis eos officia asperiores quisquam eaque vel eius nobis, porro inventore autem vero delectus iste
+            vitae
+            necessitatibus tenetur dolorem? Eligendi, et tempora quaerat quas vero recusandae minus a consequuntur
+            delectus
+            molestiae accusamus illo distinctio ratione eaque, similique atque aliquid quos culpa fuga doloremque!
+            Soluta
+            quo perspiciatis dolores et saepe incidunt quam odio excepturi voluptates dolore. Quas modi officiis
+            nostrum,
+            optio, perferendis blanditiis at cumque eos hic sapiente ea tempora sed, unde assumenda. Perferendis
+            molestiae
+            sint blanditiis exercitationem necessitatibus. Non sint accusamus placeat facilis iure?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quo, alias commodi, unde provident eum
+            tempora
+            blanditiis eos officia asperiores quisquam eaque vel eius nobis, porro inventore autem vero delectus iste
+            vitae
+            necessitatibus tenetur dolorem? Eligendi, et tempora quaerat quas vero recusandae minus a consequuntur
+            delectus
+            molestiae accusamus illo distinctio ratione eaque, similique atque aliquid quos culpa fuga doloremque!
+            Soluta
+            quo perspiciatis dolores et saepe incidunt quam odio excepturi voluptates dolore. Quas modi officiis
+            nostrum,
+            optio, perferendis blanditiis at cumque eos hic sapiente ea tempora sed, unde assumenda. Perferendis
+            molestiae
+            sint blanditiis exercitationem necessitatibus. Non sint accusamus placeat facilis iure?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quo, alias commodi, unde provident eum
+            tempora
+            blanditiis eos officia asperiores quisquam eaque vel eius nobis, porro inventore autem vero delectus iste
+            vitae
+            necessitatibus tenetur dolorem? Eligendi, et tempora quaerat quas vero recusandae minus a consequuntur
+            delectus
+            molestiae accusamus illo distinctio ratione eaque, similique atque aliquid quos culpa fuga doloremque!
+            Soluta
+            quo perspiciatis dolores et saepe incidunt quam odio excepturi voluptates dolore. Quas modi officiis
+            nostrum,
+            optio, perferendis blanditiis at cumque eos hic sapiente ea tempora sed, unde assumenda. Perferendis
+            molestiae
+            sint blanditiis exercitationem necessitatibus. Non sint accusamus placeat facilis iure?
+
+        </p>
     </div>
 
-    <!-- ==============================================================================================================================================
-                                                         Banner
-    ============================================================================================================================================== -->
+
+
+
+    <!-- =============================================================reviews================================================================================= -->
+
+
+
+    <div class="mt-72  bg-green-300 text-center p-24 " id="reviews">
+        <h1 class="text-center text-5xl font-bold">Revies</h1>
+        <p class="mt-24 text-justify text-lg leading-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quo, alias commodi, unde provident eum
+            tempora
+            blanditiis eos officia asperiores quisquam eaque vel eius nobis, porro inventore autem vero delectus iste
+            vitae
+            necessitatibus tenetur dolorem? Eligendi, et tempora quaerat quas vero recusandae minus a consequuntur
+            delectus
+            molestiae accusamus illo distinctio ratione eaque, similique atque aliquid quos culpa fuga doloremque!
+            Soluta
+            quo perspiciatis dolores et saepe incidunt quam odio excepturi voluptates dolore. Quas modi officiis
+            nostrum,
+            optio, perferendis blanditiis at cumque eos hic sapiente ea tempora sed, unde assumenda. Perferendis
+            molestiae
+            sint blanditiis exercitationem necessitatibus. Non sint accusamus placeat facilis iure?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quo, alias commodi, unde provident eum
+            tempora
+            blanditiis eos officia asperiores quisquam eaque vel eius nobis, porro inventore autem vero delectus iste
+            vitae
+            necessitatibus tenetur dolorem? Eligendi, et tempora quaerat quas vero recusandae minus a consequuntur
+            delectus
+            molestiae accusamus illo distinctio ratione eaque, similique atque aliquid quos culpa fuga doloremque!
+            Soluta
+            quo perspiciatis dolores et saepe incidunt quam odio excepturi voluptates dolore. Quas modi officiis
+            nostrum,
+            optio, perferendis blanditiis at cumque eos hic sapiente ea tempora sed, unde assumenda. Perferendis
+            molestiae
+            sint blanditiis exercitationem necessitatibus. Non sint accusamus placeat facilis iure?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quo, alias commodi, unde provident eum
+            tempora
+            blanditiis eos officia asperiores quisquam eaque vel eius nobis, porro inventore autem vero delectus iste
+            vitae
+            necessitatibus tenetur dolorem? Eligendi, et tempora quaerat quas vero recusandae minus a consequuntur
+            delectus
+            molestiae accusamus illo distinctio ratione eaque, similique atque aliquid quos culpa fuga doloremque!
+            Soluta
+            quo perspiciatis dolores et saepe incidunt quam odio excepturi voluptates dolore. Quas modi officiis
+            nostrum,
+            optio, perferendis blanditiis at cumque eos hic sapiente ea tempora sed, unde assumenda. Perferendis
+            molestiae
+            sint blanditiis exercitationem necessitatibus. Non sint accusamus placeat facilis iure?
+
+        </p>
+    </div>
+
+
+
+
+    <!-- =============================================================about================================================================================= -->
+
+
+
+    <div class="mt-72  bg-green-300 text-center p-24 " id="about">
+        <h1 class="text-center text-5xl font-bold">About</h1>
+        <p class="mt-24 text-justify text-lg leading-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quo, alias commodi, unde provident eum
+            tempora
+            blanditiis eos officia asperiores quisquam eaque vel eius nobis, porro inventore autem vero delectus iste
+            vitae
+            necessitatibus tenetur dolorem? Eligendi, et tempora quaerat quas vero recusandae minus a consequuntur
+            delectus
+            molestiae accusamus illo distinctio ratione eaque, similique atque aliquid quos culpa fuga doloremque!
+            Soluta
+            quo perspiciatis dolores et saepe incidunt quam odio excepturi voluptates dolore. Quas modi officiis
+            nostrum,
+            optio, perferendis blanditiis at cumque eos hic sapiente ea tempora sed, unde assumenda. Perferendis
+            molestiae
+            sint blanditiis exercitationem necessitatibus. Non sint accusamus placeat facilis iure?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quo, alias commodi, unde provident eum
+            tempora
+            blanditiis eos officia asperiores quisquam eaque vel eius nobis, porro inventore autem vero delectus iste
+            vitae
+            necessitatibus tenetur dolorem? Eligendi, et tempora quaerat quas vero recusandae minus a consequuntur
+            delectus
+            molestiae accusamus illo distinctio ratione eaque, similique atque aliquid quos culpa fuga doloremque!
+            Soluta
+            quo perspiciatis dolores et saepe incidunt quam odio excepturi voluptates dolore. Quas modi officiis
+            nostrum,
+            optio, perferendis blanditiis at cumque eos hic sapiente ea tempora sed, unde assumenda. Perferendis
+            molestiae
+            sint blanditiis exercitationem necessitatibus. Non sint accusamus placeat facilis iure?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quo, alias commodi, unde provident eum
+            tempora
+            blanditiis eos officia asperiores quisquam eaque vel eius nobis, porro inventore autem vero delectus iste
+            vitae
+            necessitatibus tenetur dolorem? Eligendi, et tempora quaerat quas vero recusandae minus a consequuntur
+            delectus
+            molestiae accusamus illo distinctio ratione eaque, similique atque aliquid quos culpa fuga doloremque!
+            Soluta
+            quo perspiciatis dolores et saepe incidunt quam odio excepturi voluptates dolore. Quas modi officiis
+            nostrum,
+            optio, perferendis blanditiis at cumque eos hic sapiente ea tempora sed, unde assumenda. Perferendis
+            molestiae
+            sint blanditiis exercitationem necessitatibus. Non sint accusamus placeat facilis iure?
+
+        </p>
+    </div>
+
+
+
+
+    <!-- ==================================================contact============================================================================================ -->
+
+    home
+    <div class="mt-72  bg-green-300 text-center p-24 " id="contact">
+        <h1 class="text-center text-5xl font-bold">contact us </h1>
+        <p class="mt-24 text-justify text-lg leading-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quo, alias commodi, unde provident eum
+            tempora
+            blanditiis eos officia asperiores quisquam eaque vel eius nobis, porro inventore autem vero delectus iste
+            vitae
+            necessitatibus tenetur dolorem? Eligendi, et tempora quaerat quas vero recusandae minus a consequuntur
+            delectus
+            molestiae accusamus illo distinctio ratione eaque, similique atque aliquid quos culpa fuga doloremque!
+            Soluta
+            quo perspiciatis dolores et saepe incidunt quam odio excepturi voluptates dolore. Quas modi officiis
+            nostrum,
+            optio, perferendis blanditiis at cumque eos hic sapiente ea tempora sed, unde assumenda. Perferendis
+            molestiae
+            sint blanditiis exercitationem necessitatibus. Non sint accusamus placeat facilis iure?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quo, alias commodi, unde provident eum
+            tempora
+            blanditiis eos officia asperiores quisquam eaque vel eius nobis, porro inventore autem vero delectus iste
+            vitae
+            necessitatibus tenetur dolorem? Eligendi, et tempora quaerat quas vero recusandae minus a consequuntur
+            delectus
+            molestiae accusamus illo distinctio ratione eaque, similique atque aliquid quos culpa fuga doloremque!
+            Soluta
+            quo perspiciatis dolores et saepe incidunt quam odio excepturi voluptates dolore. Quas modi officiis
+            nostrum,
+            optio, perferendis blanditiis at cumque eos hic sapiente ea tempora sed, unde assumenda. Perferendis
+            molestiae
+            sint blanditiis exercitationem necessitatibus. Non sint accusamus placeat facilis iure?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quo, alias commodi, unde provident eum
+            tempora
+            blanditiis eos officia asperiores quisquam eaque vel eius nobis, porro inventore autem vero delectus iste
+            vitae
+            necessitatibus tenetur dolorem? Eligendi, et tempora quaerat quas vero recusandae minus a consequuntur
+            delectus
+            molestiae accusamus illo distinctio ratione eaque, similique atque aliquid quos culpa fuga doloremque!
+            Soluta
+            quo perspiciatis dolores et saepe incidunt quam odio excepturi voluptates dolore. Quas modi officiis
+            nostrum,
+            optio, perferendis blanditiis at cumque eos hic sapiente ea tempora sed, unde assumenda. Perferendis
+            molestiae
+            sint blanditiis exercitationem necessitatibus. Non sint accusamus placeat facilis iure?
+
+        </p>
+    </div>
 
 
 
 
 
 
-    <script src="Js/script.js"></script>
 
 </body>
 

@@ -7,7 +7,10 @@ module.exports = {
           background: '#182527',
           headingColor: '#20CD8D',
           textColor: '#D9D9D9',
+          active: '#20CD8D'
+          
         },
+
     },
   },
   plugins: [],
