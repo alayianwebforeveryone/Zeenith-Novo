@@ -599,10 +599,6 @@ video {
   height: 3rem;
 }
 
-.h-\[400px\] {
-  height: 400px;
-}
-
 .h-full {
   height: 100%;
 }
@@ -643,11 +639,6 @@ video {
   border-radius: 0.5rem;
 }
 
-.bg-\[\#1f1e1d\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 30 29 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#292623\] {
   --tw-bg-opacity: 1;
   background-color: rgb(41 38 35 / var(--tw-bg-opacity));
@@ -668,25 +659,8 @@ video {
   background-color: rgb(32 205 141 / var(--tw-bg-opacity));
 }
 
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-textColor {
-  --tw-bg-opacity: 1;
-  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
-}
-
-.bg-\[292623\] {
-  background-color: 292623;
-}
-
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
-}
-
-.bg-opacity-80 {
-  --tw-bg-opacity: 0.8;
 }
 
 .bg-opacity-90 {
@@ -733,14 +707,14 @@ video {
   padding-bottom: 1rem;
 }
 
-.py-72 {
-  padding-top: 18rem;
-  padding-bottom: 18rem;
-}
-
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-72 {
+  padding-top: 18rem;
+  padding-bottom: 18rem;
 }
 
 .pb-12 {
@@ -799,11 +773,6 @@ video {
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
-.text-headingColor {
-  --tw-text-opacity: 1;
-  color: rgb(32 205 141 / var(--tw-text-opacity));
-}
-
 .text-textColor {
   --tw-text-opacity: 1;
   color: rgb(217 217 217 / var(--tw-text-opacity));
@@ -814,26 +783,9 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.opacity-60 {
-  opacity: 0.6;
-}
-
-.opacity-80 {
-  opacity: 0.8;
-}
-
-.opacity-90 {
-  opacity: 0.9;
-}
-
 .hover\:bg-green-300:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(134 239 172 / var(--tw-bg-opacity));
-}
-
-.hover\:text-gray-300:hover {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus {
@@ -900,4 +852,27 @@ video {
     margin-right: calc(5rem * var(--tw-space-x-reverse));
     margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
   }
+}
+
+
+
+/* lther than tailwind (custom css) */
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Basic style for nav links */
+/* Basic style for nav links */
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+/* Style for active link */
+.nav-link.active {
+  color: #20CD8D;
+
+  font-weight: bold;
 }
