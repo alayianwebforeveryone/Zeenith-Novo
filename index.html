@@ -20,40 +20,43 @@
 
 <body class="bg-background">
 
-    <header class="bg-[url('Image/bgbanner.jpg')] bg-no-repeat bg-cover bg-center h-screen pt-4  w">
+    <header class="bg-[url('Image/bgbanner.jpg')] bg-no-repeat bg-cover bg-center h-screen md:pt-4  ">
         <!-- ==============================================================================================================================================
                                                           Navigation
      ============================================================================================================================================== -->
+
+
+
         <div
-            class="flex  fixed w-full  text-white top-0 py-5 flex-wrap justify-between px-4 items-center lg:px-20 bg-[#292623] bg-opacity-90 b-40  ">
-            <h1 class="text-lg  font-semibold">Zeenith Nova</h1>
-            <!-- menu-icon for small screen----->
+            class="flex   fixed left-0 right-0   px-8   top-0 text-white pl-5 md:w-full py-5 justify-between items-center lg:px-20 bg-[#292623] bg-opacity-90">
+            <h1 class="text-lg font-semibold">Zeenith Nova</h1>
             <div id="menu-btn" class="text-white md:hidden block focus:outline-none">
-                <img class="w-10 h-12 " id="menu-icon" src="/Image/menuIcon.svg" alt="menu">
+                <img class="w-10 h-12" id="menu-icon" src="/Image/menuIcon.svg" alt="menu">
                 <img class="w-10 h-12 hidden" id="close-icon" src="/Image/close.svg" alt="close">
             </div>
 
-            <!-- navigation for large screen -->
-            <div id="menu" class="hidden sm:flex xl:space-x-20  lg:space-x-12 md:space-x-8   text-lg">
-                <a href="#home" id="home-link" class="nav-link  ">Home</a>
-                <a href="#services" id="services-link" class="nav-link ">Services</a>
-                <a href="#work" id="work-link" class="nav-link hover:">Our work</a>
-                <a href="#reviews" id="reviews-link" class="nav-link hover:">Reviews</a>
-                <a href="#about" id="about-link" class="nav-link hover:">About</a>
-                <a href="#contact" id="contact-link" class="nav-link  hoveray-300">Contact</a>
+            <div id="menu" class="hidden md:flex xl:space-x-20 lg:space-x-12 md:space-x-8 text-lg">
+                <a href="#home" id="home-link" class="nav-link">Home</a>
+                <a href="#services" id="services-link" class="nav-link">Services</a>
+                <a href="#work" id="work-link" class="nav-link">Our work</a>
+                <a href="#reviews" id="reviews-link" class="nav-link">Reviews</a>
+                <a href="#about" id="about-link" class="nav-link">About</a>
+                <a href="#contact" id="contact-link" class="nav-link">Contact</a>
+            </div>
+            <div id="mobile-menu" class=" absolute top-20  md:hidden hidden left-0 right-0 z-10 w-full bg-background  ">
+                <a href="#home" id="home-link" class="block text-white px-4 py-2 hover:bg-headingColor  ">Home</a>
+                <a href="#services" id="services-link"
+                    class="block text-white px-4 py-2 hover:bg-headingColor">Services</a>
+                <a href="#work" id="work-link" class="block text-white px-4 py-2 hover:bg-headingColor">Our work</a>
+                <a href="#reviews" id="reviews-link"
+                    class="block text-white px-4 py-2 hover:bg-headingColor">Reviews</a>
+                <a href="#about" id="about-link" class="block text-white px-4 py-2 hover:bg-headingColor">About</a>
+                <a href="#contact" id="contact-link"
+                    class="block text-white px-4 py-2 hover:bg-headingColor">Contact</a>
             </div>
         </div>
 
 
-        <!-- small screen -->
-        <div id="mobile-menu" class="md:hidden hidden pl-12 bg-background ">
-            <a href="#home" class="block text-white px-4 py-2">Home</a>
-            <a href="#services" class="block text-white px-4 py-2">Services</a>
-            <a href="#work" class="block text-white px-4 py-2">Our work</a>
-            <a href="#reviews" class="block text-white px-4 py-2">Reviews</a>
-            <a href="#about" class="block text-white px-4 py-2">About</a>
-            <a href="#contact" class="block text-white px-4 py-2">Contact</a>
-        </div>
 
 
 
@@ -63,7 +66,7 @@
             <div
                 class="block  pb-12  text-center mx-auto bg-[#292623] bg-opacity-60 w-[90%] md:w-[70%] py-4 rounded-lg">
                 <p
-                    class="mt-12 text-textColor leading-[60px]  md:text-[40px]  text-xl   font-extrabold md:w-[75%]  w-[90%]  block mx-auto">
+                    class="mt-12 text-textColor md:leading-[60px]  md:text-[40px]  text-xl   font-extrabold md:w-[75%]  w-[90%]  block mx-auto">
                     Lorem ipsum dolor sit
                     amet consectetur adipisicing elit. Quos porro quasir.
                 </p>
@@ -82,20 +85,25 @@
 
 
 
-    <div class="mt-40  text-center p-24 " id="services">
-        <h1 class="text-center  text-7xl text-headingColor font-bold"> Our Services</h1>
-        <p class="text-xl md:w-[75%] text-textColor leading-8 mx-auto mt-12 ">Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quos porro quasir. Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Quos porro quasir. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Quos porro quasir.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quos porro quasir. Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Quos porro quasir. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Quos porro quasir.</p>
+    <h1 class="text-center  text-3xl mt-24   md:text-7xl text-headingColor font-bold"> Our Services</h1>
+    <div class="md:mt- mt-8  flex flex-col-reverse md:flex-col  gap-8     p-4   md:p-8  " id="services">
+        <div>
+            <p class="text-xl px-8  md:w-[75%] text-justify text-textColor leading-8  md:leading-10 mx-auto md:mt-4  ">Lorem ipsum dolor sit amet
+                consectetur
+                adipisicing elit. Quos porro quasir. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Quos porro quasir. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quos porro quasir.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quos porro quasir. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Quos porro quasir. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quos porro quasir.</p>
+
+        </div>
 
 
-        <div class="flex flex-col md:flex-row justify-center mt-40  space-x-10"> <!-- services container -->
+        <div class="flex flex-col md:flex-row justify-center md:mt-12  items-center space-y-5 md:gap-20    ">
+            <!-- services container -->
             <!-- services 1 -->
-            <div class="py-3  md:w-[25%] w-[80%] bg-white rounded-3xl ">
+            <div class="py-3  md:w-[25%] w-[90%]  bg-white rounded-3xl ">
                 <img src="Image/w1.webp" class="rounded-3xl w-[350px] h-[230px] mx-auto  " alt="service1">
                 <p class="text-lg mt-8 px-4 pb-2  ">Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet
                     consecteturLorem ipsum dolor sit amet consectetur
@@ -103,7 +111,7 @@
 
             </div>
             <!-- services 2 -->
-            <div class="py-3  md:w-[25%] w-[80%] bg-white rounded-3xl ">
+            <div class="py-3  md:w-[25%] w-[90%] bg-white rounded-3xl ">
                 <img src="Image/w1.webp" class="rounded-3xl w-[350px] h-[230px] mx-auto  " alt="service1">
                 <p class="text-lg mt-8 px-4 pb-2  ">Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet
                     consecteturLorem ipsum dolor sit amet consectetur
@@ -111,7 +119,7 @@
 
             </div>
             <!-- services 3 -->
-            <div class="py-3  md:w-[25%] w-[80%] bg-white rounded-3xl ">
+            <div class="py-3  md:w-[25%] w-[90%] bg-white rounded-3xl ">
                 <img src="Image/w1.webp" class="rounded-3xl w-[350px] h-[230px] mx-auto  " alt="service1">
                 <p class="text-lg mt-8 px-4 pb-2  ">Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet
                     consecteturLorem ipsum dolor sit amet consectetur
@@ -129,37 +137,42 @@
 
 
 
-    <div class="mt-40  text-center p-24 " id="work">
-        <h1 class="text-center  text-7xl text-headingColor font-bold"> What we have done?</h1>
-        <p class="text-xl md:w-[75%] text-textColor leading-8 mx-auto mt-12 ">Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quos porro quasir. Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Quos porro quasir. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Quos porro quasir.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quos porro quasir. Lorem ipsum dolor
-            sit amet consectetur adipisicing elit. Quos porro quasir. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Quos porro quasir.</p>
+    <h1 class="text-center  text-3xl mt-24   md:text-7xl text-headingColor font-bold"> What we have done?</h1>
+    <div class="md:mt- mt-8  flex flex-col-reverse md:flex-col  gap-8     p-4   md:p-8  " id="work">
+        <div>
+            <p class="text-xl px-8  md:w-[75%] text-justify text-textColor leading-8  md:leading-10 mx-auto md:mt-4  ">Lorem ipsum dolor sit amet
+                consectetur
+                adipisicing elit. Quos porro quasir. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Quos porro quasir. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quos porro quasir.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quos porro quasir. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Quos porro quasir. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Quos porro quasir.</p>
+
+        </div>
 
 
-        <div class="flex flex-col md:flex-row justify-center mt-40  space-x-10"> <!-- portfolio container -->
-            <!-- project 1 -->
-            <div class="py-3  md:w-[25%] w-[80%] bg-white rounded-3xl ">
-                <img src="Image/w1.webp" class="rounded-3xl w-[350px] h-[230px] mx-auto  " alt="project1">
+        <div class="flex flex-col md:flex-row justify-center md:mt-12  items-center space-y-5 md:gap-20    ">
+            <!-- services container -->
+            <!-- services 1 -->
+            <div class="py-3  md:w-[25%] w-[90%]  bg-white rounded-3xl ">
+                <img src="Image/w1.webp" class="rounded-3xl w-[350px] h-[230px] mx-auto  " alt="service1">
                 <p class="text-lg mt-8 px-4 pb-2  ">Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet
                     consecteturLorem ipsum dolor sit amet consectetur
                     adipisicing elit. Quos porro quasir.</p>
 
             </div>
-            <!-- project 2 -->
-            <div class="py-3  md:w-[25%] w-[80%] bg-white rounded-3xl ">
-                <img src="Image/w1.webp" class="rounded-3xl w-[350px] h-[230px] mx-auto  " alt="project3">
+            <!-- services 2 -->
+            <div class="py-3  md:w-[25%] w-[90%] bg-white rounded-3xl ">
+                <img src="Image/w1.webp" class="rounded-3xl w-[350px] h-[230px] mx-auto  " alt="service1">
                 <p class="text-lg mt-8 px-4 pb-2  ">Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet
                     consecteturLorem ipsum dolor sit amet consectetur
                     adipisicing elit. Quos porro quasir.</p>
 
             </div>
-            <!-- project 3 -->
-            <div class="py-3  md:w-[25%] w-[80%] bg-white rounded-3xl ">
-                <img src="Image/w1.webp" class="rounded-3xl w-[350px] h-[230px] mx-auto  " alt="project3">
+            <!-- services 3 -->
+            <div class="py-3  md:w-[25%] w-[90%] bg-white rounded-3xl ">
+                <img src="Image/w1.webp" class="rounded-3xl w-[350px] h-[230px] mx-auto  " alt="service1">
                 <p class="text-lg mt-8 px-4 pb-2  ">Lorem ipsum dolor sit amet consecteturLorem ipsum dolor sit amet
                     consecteturLorem ipsum dolor sit amet consectetur
                     adipisicing elit. Quos porro quasir.</p>
@@ -175,9 +188,9 @@
 
     <!-- =============================================================reviews================================================================================= -->
 
-    <div class="mt-40  text-center p-24 " id="reviews">
-        <h1 class="text-center  text-7xl text-headingColor font-bold"> Reviews</h1>
-        <p class="text-xl md:w-[75%] text-textColor leading-8 mx-auto mt-12 ">Lorem ipsum dolor sit amet consectetur
+    <div class="mt-40   md:p-24 " id="reviews">
+        <h1 class="text-center    text-3xl    md:text-7xl text-headingColor font-bold"> Reviews</h1>
+        <p class="text-xl text-justify px-8   md:w-[75%] text-textColor leading-8 mx-auto mt-12 ">Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Quos porro quasir. Lorem ipsum dolor
             sit amet consectetur adipisicing elit. Quos porro quasir. Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Quos porro quasir.Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -186,7 +199,7 @@
             consectetur adipisicing elit. Quos porro quasir.</p>
 
 
-        <div class="flex flex-col md:flex-row justify-center mt-40  space-x-10"> <!-- reviews container -->
+        <div class="flex flex-col md:flex-row justify-center items-center gap-12  mt-12  md:mt-40 "> <!-- reviews container -->
             <!-- project 1 -->
             <div class=" md:w-[23%] w-[80%] bg-white rounded-3xl p-8 ">
                 <p class="text-2xl leading-10  px-4       ">"Testimonials are short quotes
@@ -237,9 +250,9 @@
 
 
 
-    <div class="mt-40  text-center p-24 " id="about">
-        <h1 class="text-center  text-7xl text-headingColor font-bold"> About us </h1>
-        <p class="text-xl md:w-[75%] text-textColor leading-8 mx-auto mt-12 ">Lorem ipsum dolor sit amet consectetur
+    <div class="mt-40  text-center md:p-24 px-8  " id="about">
+        <h1 class="text-center    text-3xl    md:text-7xl text-headingColor font-bold"> About us</h1>
+        <p class="text-xl md:w-[75%] text-textColor leading-8 mx-auto mt-12 text-justify md:text-center ">Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Quos porro quasir. Lorem ipsum dolor
             sit amet consectetur adipisicing elit. Quos porro quasir. Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Quos porro quasir.Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -248,13 +261,13 @@
             consectetur adipisicing elit. Quos porro quasir.</p>
 
 
-        <div class="my-24 md:w-[13%] border-b-4 border-headingColor mx-auto">
+        <div class="my-24 md:w-[13%] w-[70%] border-b-4 border-headingColor mx-auto">
             <h1 class="text-5xl font-bold text-textColor">Our Team</h1>
         </div>
 
-        <div class="flex flex-col md:flex-row justify-center mt-40  space-x-10"> <!-- team container -->
+        <div class="flex flex-col md:flex-row justify-center mt-40  items-center"> <!-- team container -->
             <!-- member 1 -->
-            <div class="w-[25%]">
+            <div class="md:w-[25%] w-[80%]">
                 <img src="Image/team.jpeg" class="rounded-3xl w-[260px] h-[230px] mx-auto  " alt="project1">
                 <p class="text-2xl  text-headingColor font-semibold  mt-8 px-4 pb-2  ">Abdullah Jan</p>
                 <p class="text-3xl  text-textColor font-bold   px-4 pb-2  ">CEO & Director </p>
@@ -278,7 +291,7 @@
 
             <!-- member 2 -->
 
-            <div class="w-[25%]">
+            <div class="md:w-[25%] w-[80%] mt-8 ">
                 <img src="Image/team.jpeg" class="rounded-3xl w-[260px] h-[230px] mx-auto  " alt="project1">
                 <p class="text-2xl  text-headingColor font-semibold  mt-8 px-4 pb-2  ">Abdullah Jan</p>
                 <p class="text-3xl  text-textColor font-bold   px-4 pb-2  ">CEO & Director </p>
@@ -300,7 +313,7 @@
             </div>
 
             <!-- member 3 -->
-            <div class="w-[25%]">
+            <div class="md:w-[25%] w-[80%] mt-8">
                 <img src="Image/team.jpeg" class="rounded-3xl w-[260px] h-[230px] mx-auto  " alt="project1">
                 <p class="text-2xl  text-headingColor font-semibold  mt-8 px-4 pb-2  ">Abdullah Jan</p>
                 <p class="text-3xl  text-textColor font-bold   px-4 pb-2  ">CEO & Director </p>
@@ -331,14 +344,13 @@
     <!-- ==================================================contact============================================================================================ -->
 
 
-    <div class="mt-40  p-24 " id="contact">
+    <div class="mt-40    md:p-24 " id="contact">
 
-        <h1 class="text-center py-8  mb-32  text-7xl text-headingColor font-bold"> About us
-        </h1>
+        <h1 class="text-center mb-8    text-3xl    md:text-7xl text-headingColor font-bold"> Contact us</h1>
 
-        <div class=" flex flex-col md:flex-row justify-between px-60 items-center   ">
-            <div class="md:w-[40%]  ">
-                <p class=" text-lg text-textColor leading-8 text-justify">Lorem ipsum dolor sit amet consectetur
+        <div class=" flex flex-col md:flex-row justify-between md:px-60 items-center   ">
+            <div class="md:w-[40%] w-full ">
+                <p class=" text-lg text-textColor px-8  leading-8 text-justify">Lorem ipsum dolor sit amet consectetur
                     adipisicing
                     Name
                     elit. Quos porro quasir. Lorem ipsum dolor sit amet
@@ -363,8 +375,8 @@
                     </a>
                 </div>
             </div>
-            
-            <div class="w-[40%] bg-textColor px-8 py-12 rounded-xl ">
+
+            <div class="md:w-[40%] w-[80%]  bg-textColor md:px-8 mt-8 px-4    py-12 rounded-xl ">
 
                 <form class=" mx-auto">
                     <div class="mb-5">
@@ -418,35 +430,35 @@
     </div>
 
 
- <!-- ==================================================footer============================================================================================ -->
-<footer>
+    <!-- ==================================================footer============================================================================================ -->
+    <footer class="mt-12 ">
 
-    <hr>
+        <hr>
 
-    <div id="menu" class=" my-8 flex justify-center lg:space-x-12 md:space-x-8   text-lg">
-        <a href="#home" id="home-link" class="nav-link  ">Home</a>
-        <a href="#services" id="services-link" class="nav-link ">Services</a>
-        <a href="#work" id="work-link" class="nav-link hover:">Our work</a>
-        <a href="#reviews" id="reviews-link" class="nav-link hover:">Reviews</a>
-        <a href="#about" id="about-link" class="nav-link hover:">About</a>
-        <a href="#contact" id="contact-link" class="nav-link  hoveray-300">Contact</a>
-    </div>
-    <div class="flex justify-center mt-8  justify- items-center space-x-8   ">
-        <a href="">
-            <div><img class="w-10 h-10 " src="Image/linkedin.svg" alt="linkedin"></div>
-        </a>
-        <a href="">
-            <div><img class="w-12 h-12 " src="Image/phone.svg" alt="phone"></div>
-        </a>
-        <a href="">
-            <div><img class="w-10 h-10 " src="Image/fb.svg" alt="=fb"></div>
-        </a>
-    </div>
-    <div class=" text-white py-4 text-center">
-       <p class="text-sm py-4 ">Copyright © 2024 - All rights reserved</p>
-   </div>
+        <div id="menu" class=" my-8 flex justify-center lg:space-x-12 md:space-x-8 space-x-8 gap-4  flex-wrap   text-lg">
+            <a href="#home" id="home-link" class="nav-link  ">Home</a>
+            <a href="#services" id="services-link" class="nav-link ">Services</a>
+            <a href="#work" id="work-link" class="nav-link hover:">Our work</a>
+            <a href="#reviews" id="reviews-link" class="nav-link hover:">Reviews</a>
+            <a href="#about" id="about-link" class="nav-link hover:">About</a>
+            <a href="#contact" id="contact-link" class="nav-link  hoveray-300">Contact</a>
+        </div>
+        <div class="flex justify-center mt-8  justify- items-center space-x-8   ">
+            <a href="">
+                <div><img class="w-10 h-10  " src="Image/linkedin.svg" alt="linkedin"></div>
+            </a>
+            <a href="">
+                <div><img class="w-12 h-12 " src="Image/phone.svg" alt="phone"></div>
+            </a>
+            <a href="">
+                <div><img class="w-10 h-10 " src="Image/fb.svg" alt="=fb"></div>
+            </a>
+        </div>
+        <div class=" text-white py-4 text-center">
+            <p class="text-sm py-4 ">Copyright © 2024 - All rights reserved</p>
+        </div>
 
-</footer>
+    </footer>
 
 
 </body>
